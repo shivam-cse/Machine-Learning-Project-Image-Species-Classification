@@ -3,7 +3,7 @@
 
 You can download Dataset from given link : https://www.robots.ox.ac.uk/~vgg/data/flowers/17/
 
-### For Details(more) Information and experiment, You can refer my ppt which i made during it(I put my ppt (also pdf and result excel sheet) ./Project_Analysis/Flower_Species_Classification.ppt).
+### For Details(more) Information and experiment, You can refer my ppt <a href="https://drive.google.com/file/d/1HbQlr94_FOASblaYn2-tJlfq2mwKvn72/view?usp=sharing">(Link)</a> which i made during it(I put my ppt (also pdf and result excel sheet) ./Project_Analysis/Flower_Species_Classification.ppt).
 As we know its having 17 classes, i have applies multiple algorithm (like : logistic regression , Single layer perceptron, multi layer perceptron, perceptron learning algorithm ect).
 
 ##  Feature Extraction from imageses
