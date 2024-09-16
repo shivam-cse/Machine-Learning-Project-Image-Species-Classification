@@ -1,42 +1,46 @@
-# Machine-Learning-Project-Image-Species-Classification
-#### Machine Learning Project - Task: Images classification (17 Category Flower Dataset) . The data was obtained from the University of Oxford’s Department of Engineering Science.
+## Machine Learning Project - Image Species Classification (17 Category Flower Dataset)
 
-You can download Dataset from given link : https://www.robots.ox.ac.uk/~vgg/data/flowers/17/
+This project explores image classification using a 17-category flower dataset obtained from the University of Oxford's Department of Engineering Science. 
 
-### For more details and information about the experiments, you can refer to my PowerPoint presentation, which I created during the project. (I have placed my presentation, as well as the PDF and the results Excel sheet, in the ./Project_Analysis/Flower_Species_Classification.ppt directory.)
+**Dataset:** You can download the dataset from the following link: [https://www.robots.ox.ac.uk/~vgg/data/flowers/17/](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/)
 
-As we know that, having 17 classes, I have applies multiple algorithm (like : logistic regression , Single layer perceptron, multi layer perceptron, perceptron learning algorithm ect).
+**Project Analysis:**
 
-##  Feature Extraction from imageses
-1. Features are the information or list of numbers that are
-extracted from an image.
-2. When deciding about the features that could quantify
-plants and flowers, we could possibly think of Colour,
-Texture and Shape as the primary ones.
-3. In this Project I will be used three inbuilt libraries for
-features extraction :  
-    • Colour Histogram that quantifies colour of the flower  
-    • Hu Moments that quantifies shape of the flower.  
-    • Haralick Texture that quantifies texture of the flower.
+For more details and information about the experiments conducted during this project, you can refer to the accompanying PowerPoint presentation located in the `./Project_Analysis/Flower_Species_Classification.ppt` directory. This folder also includes the PDF version of the presentation and an Excel sheet containing the results.
 
-## Finally I compared the accuracy of every algorithm which i have written here in brief : 
+## Feature Extraction from Images
 
-### Logistic Regression: (Inbuilt - sklearn)  
-    • With MinMaxScaler normalization technique, its able to achieve 64.5% accuracy  
-    • With StandardScaler normalization technique, its able to achieve 72% accuracy  
-    • It’s performing best compared to all other algorithms that are evaluated. 
-    
-### Perceptron Learning Algorithm(PLA) : (Inbuilt - sklearn)  
-    • Train Accuracy : 88.83% & Test Accuracy : 60.41% 
-    
-### Single Layer Perceptron:  
-    • For 5-fold it’s able to achieve an accuracy of 57% with my own code (No inbuilt)  
-    • without k-fold ( train : 95% ; test : 45 %) with my own code (No inbuilt )
-    
-### Muli Layer Perceptron:  
-    • For 5-fold it’s able to achieve an accuracy of 63.23% with 1 hidden layer of 20 hidden neurons and max iterations of 500 with my own code (No inbuilt )  
-    • It can be observed that as the number of hidden neurons increases, the more linearity the trained dataset will tend to and increases the accuracy. Which is described by the cover’s theorem
-    
-### Accuracy Comparison: Logistic Regression > MLP > PLA > SLP
+Features are numerical representations of the information extracted from an image. In the context of classifying plants and flowers, some primary features to consider include color, texture, and shape.
 
+This project utilizes three built-in libraries for feature extraction:
 
+* **Color Histogram:** Quantifies the color distribution of the flower.
+* **Hu Moments:** Quantifies the shape of the flower.
+* **Haralick Texture:** Quantifies the texture of the flower.
+
+## Algorithm Comparison
+
+This section compares the accuracy achieved by various algorithms implemented in the project.
+
+### Logistic Regression (Scikit-learn)
+
+* Achieved 64.5% accuracy with MinMaxScaler normalization.
+* Achieved 72% accuracy with StandardScaler normalization.
+* **Outperformed all other evaluated algorithms.**
+
+### Perceptron Learning Algorithm (PLA) (Scikit-learn)
+
+* Training Accuracy: 88.83%
+* Test Accuracy: 60.41%
+
+### Single Layer Perceptron (Custom Implementation)
+
+* Achieved 57% accuracy with 5-fold cross-validation.
+* Achieved 95% training accuracy and 45% test accuracy without k-fold cross-validation.
+
+### Multi-Layer Perceptron (Custom Implementation)
+
+* Achieved 63.23% accuracy with 5-fold cross-validation, 1 hidden layer of 20 neurons, and 500 max iterations.
+* As the number of hidden neurons increases, the model tends towards higher training accuracy (potentially due to overfitting) as described by the Universal Approximation Theorem.
+
+**Accuracy Ranking:** Logistic Regression > MLP > PLA > SLP
